@@ -1,0 +1,107 @@
+/* Estilos para la zona de arrastrar y soltar */
+#drop-zone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+/* Estilo para el botón "Elegir archivo" */
+#file-input {
+  display: block;
+  margin: 20px auto; /* Centrar el botón horizontalmente */
+}
+
+/* Estilo para el botón */
+#upload-button {
+  display: block;
+  margin: 10px auto; /* Centrar el botón horizontalmente */
+}
+
+/* Estilo para centrar el título */
+h1 {
+  text-align: center;
+}
+
+/* Estilos de fuente */
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Estilos específicos para h1 */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #041e47;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilos para input y botón */
+input,
+button {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4285f4;
+}
+
+/* Estilos para el botón */
+button {
+  background-color: #4285f4;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #3872e6;
+  color: #000000;
+  transform: scale(1.1);
+}
+
+/* Estilos para mensajes */
+.message {
+  text-align: center;
+  font-size: 14px;
+  color: #4285f4;
+}
+
+/* Estilos adicionales para input y botón */
+.file-input {
+  cursor: pointer;
+}
+
+.upload-button {
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-button:hover {
+  background-color: #3872e6;
+}
+
+/* Estilos para mensajes de éxito y error */
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+
+/* Estilos para dragover */
+#drop-zone.drag-over {
+  border-color: #3872e6; /* Cambia el color del borde cuando se arrastra un archivo sobre él */
+  background-color: #f2f2f2; /* Cambia el fondo cuando se arrastra un archivo sobre él */
+  color: #000000; /* Cambia el color de texto cuando se arrastra un archivo sobre él */
+}
+

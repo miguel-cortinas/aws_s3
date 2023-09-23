@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subir archivo a Amazon S3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Subir archivo a Amazon S3</h1>
+  <div id="drop-zone">Arrastra y suelta archivos aquí o selecciona un archivo:</div>
+    <p>Selecciona un archivo:</p>
+    <input type="file" id="file-input">
+    <button id="upload-button">Subir</button>
+  </div>
+  <div class="message"></div>
+  <div class="message" id="success-message"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.132.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
